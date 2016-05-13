@@ -55,3 +55,10 @@ The project runs on annotations and should be easy to follow.
 
 The times brought back from supported cites (London, Hong Kong) are in the local timezone. That is highlighted in the UI next to the sunrise and sunset. 
 
+I would like to improve on the model layer, this was a simple implementation of a small API and due to its simplicity I used the basic org.json.JSONObject to retrieve element from the json feed returned.
+
+In a more complicated environment I would create a model layer with POJOs and use Jackson to serialize/deserialize the JSON.
+
+
+
+
