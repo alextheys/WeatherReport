@@ -5,17 +5,25 @@ first pull the lastest from the master branch or by downloading the project as z
 Requirements:
 maven 3.2.3 or above
 Tomcat 7 or 8 defined as follows in the maven properties:
+
 <server>
-		<id>TomcatServer</id>
-		<username>**Add you own username**</username>
-		<password>**Add you own username**</password>
-	</server>
+	<id>TomcatServer</id>
+	<username>**Add you own username**</username>
+	<password>**Add you own username**</password>
+</server>
 
 This application is installed by running the following command at the root of the application folder (eg: ~/Development/WeatherReport-master):
+
 mvn clean install
 
 It is deployed by running the following command in the same location as above:
+
 mvn tomcat7:deploy
+
+If the app has already been install, please run: 
+
+mvn tomcat7:redeploy
+
 The command above will work for tomcat 7 or tomcat 8.
 
 Assuming the tomcat server is running on localhost:8080 the app will be found at:
@@ -27,8 +35,11 @@ src/main/resources/app.properties
 currently loaded are London and Honk kong
 
 Feel free to add more cities to the list, however running the following commands will be necessary:
+
 mvn clean install
+
 and 
+
 mvn tomcat7:redeploy
 
 I have developed all of the functionalities necessary and should be catering for all eventualities (bad APi key, no results found for the city as well as many other exceptions).
