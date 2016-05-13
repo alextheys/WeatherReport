@@ -59,6 +59,6 @@ I would like to improve on the model layer, this was a simple implementation of 
 
 In a more complicated environment I would create a model layer with POJOs and use Jackson to serialize/deserialize the JSON.
 
-
+Another improvement would be to create a full log4j porperties file as opposed to using the default settings, this is another area I thought I could save time to focus on the deliverables and try to make the code more resilient.
 
 
