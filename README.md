@@ -3,7 +3,8 @@ To install and deploy this app:
 first pull the lastest from the master branch or by downloading the project as zip file then unzip it.
 
 Requirements:
-maven 3.2.3 or above
+maven 3.2.3 or above (tested with Maven 3.2.3, should work with 3.3)
+Java SE 8 installed (currently using this version: Java(TM) SE Runtime Environment (build 1.8.0_74-b02))
 Tomcat 7 or 8 defined as follows in the maven properties:
 
 <server>
